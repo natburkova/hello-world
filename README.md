@@ -1,3 +1,3 @@
 # hello-world
-example repo
+example repod
 first edit to the file
