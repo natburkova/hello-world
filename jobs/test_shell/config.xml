@@ -24,7 +24,9 @@
     <hudson.tasks.Shell>
       <command>rm -rf $JENKINS_HOME/hello-world/*
 cd $JENKINS_HOME
-cp -R --parents jobs/*/*.xml users/*/*.xml userContent/* config.xml hello-world/</command>
+cp -R --parents config.xml jobs/*/*.xml users/*/*.xml hello-world/
+cd hello-world
+git add -- config.xml jobs/*/*.xml users/*/*.xml</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
