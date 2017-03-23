@@ -16,8 +16,7 @@
 cd $JENKINS_HOME
 cp -R --parents config.xml jobs/*/*.xml users/*/*.xml hello-world/
 cd hello-world
-git add -- config.xml jobs/*/*.xml users/*/*.xml
-git commit -m &quot;Automated Jenkins jobs backup commit on $(date)&quot;
+
 &apos;&apos;&apos;
     }
 }</script>
