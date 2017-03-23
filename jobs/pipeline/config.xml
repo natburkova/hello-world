@@ -12,10 +12,10 @@
     <script>node {
     stage(&apos;commit&apos;){
         sh &apos;&apos;&apos;
-        rm -rf $JENKINS_HOME/hello-world/*
+        rm -rf $JENKINS_HOME/hello-world2/*
 cd $JENKINS_HOME
-cp -R --parents config.xml jobs/*/*.xml users/*/*.xml hello-world/
-cd hello-world
+cp -R --parents config.xml jobs/*/*.xml users/*/*.xml hello-world2/
+cd hello-world2
 git add -- config.xml jobs/*/*.xml users/*/*.xml
 git commit -m &quot;Automated Jenkins jobs backup commit on $(date)&quot;
 git push https://natburkova:natburkovaZ1@github.com/natburkova/hello-world --all
